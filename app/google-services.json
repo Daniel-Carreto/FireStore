@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "285990272500",
+    "firebase_url": "https://firestore-5cb74.firebaseio.com",
+    "project_id": "firestore-5cb74",
+    "storage_bucket": "firestore-5cb74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285990272500:android:0552ec6622b71c35270da1",
+        "android_client_info": {
+          "package_name": "com.danycarreto.firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285990272500-fsfi769pnmm3732s26huo4ngoluhk6ng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2gdBts2IF6kH0TIcLtMC8cqC5KCcMIBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285990272500-fsfi769pnmm3732s26huo4ngoluhk6ng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

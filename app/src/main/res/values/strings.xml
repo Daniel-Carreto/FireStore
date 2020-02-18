@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FireStore</string>
+    <!--Facebook-->
+    <string name="facebook_app_id">493539718266487</string>
+    <string name="fb_login_protocol_scheme">fb493539718266487</string>
+    <!--Firebase-->
+    <string name="facebook_application_id" translatable="false">@string/facebook_app_id</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">@string/fb_login_protocol_scheme</string>
+
+
+</resources>

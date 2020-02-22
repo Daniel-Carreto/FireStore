@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         try{
+            //Hash para facebook
             val info: PackageInfo = getPackageManager().getPackageInfo(
                 "com.danycarreto.firestore",
                 PackageManager.GET_SIGNATURES
@@ -55,6 +56,9 @@ class MainActivity : AppCompatActivity() {
             e.printStackTrace()
         }
 
+        /**
+         * Se genera el token para dispositivo único
+         */
         FirebaseInstanceId.getInstance().instanceId
             .addOnCompleteListener(OnCompleteListener { task ->
                 if (!task.isSuccessful) {
@@ -74,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         firebaseAuthListener = FirebaseAuth.AuthStateListener {
 
             if(it.currentUser!= null){
-                //TODO Dejarlo pasar
+                startActivity(Intent(this, ExtraActivity::class.java))
             }else{
                 //Registrarlo
                 val auth = AuthUI.getInstance()

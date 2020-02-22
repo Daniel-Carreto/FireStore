@@ -12,14 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity"
+        <activity android:name=".ExtraActivity"></activity>
+        <activity
+            android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <meta-data
@@ -43,30 +44,26 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
-
-        <!--Es necesario registrar el service y anunciar que tendra un intentfilter para recibir las
+        <activity android:name=".MainActivity"></activity>
+        <!--
+        Es necesario registrar el service y anunciar que tendra un intentfilter para recibir las
         notificaciones, ademas se configuran los metadatas para el control de notificaciones
-        gestionados por Firebase, como  el canal, el icono de la notificacion, etc-->
+        gestionados por Firebase, como  el canal, el icono de la notificacion, etc
+        -->
         <service
             android:name=".Notification.NotificationManager"
             android:exported="false">
-
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@mipmap/ic_launcher"/>
-
+            android:resource="@mipmap/ic_launcher" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
-            android:value="@string/app_name"/>
-
+            android:value="@string/app_name" />
     </application>
 
 </manifest>

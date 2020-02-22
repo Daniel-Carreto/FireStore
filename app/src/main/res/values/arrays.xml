@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="list_states">
+        <item>CDMX</item>
+        <item>Puebla</item>
+        <item>Jalisco</item>
+        <item>Veracruz</item>
+    </string-array>
+</resources>
